@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main ()
+{
+    int telefone, cpf;
+    float valorCompra, desconto;
+
+
+    printf("Insira o seu numero de telefone: "); 
+    scanf("%i", &telefone); 
+    
+    printf("Insira o seu CPF: ");
+    scanf("%i", &cpf);
+
+    printf("Insira o valor da compra: ");
+    scanf("%f", &valorCompra);
+
+    printf("Insira o valor do desconto: ");
+    scanf("%f", &desconto);
+
+ 
+    if (valorCompra > 100 )
+    {
+        float valorFinal = valorCompra - valorCompra*desconto;
+
+        printf("Aplicado desconto de: %.2f\n", desconto);
+        printf("Valor final com desconto: %.2f\n", valorFinal);
+    
+        }
+    
+         printf("Obrigado, volte sempre!!!\n");    
+    
+    
+        return 0;   
+}
